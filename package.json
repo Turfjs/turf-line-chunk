@@ -15,6 +15,7 @@
     "turf-linestring": "^1.0.2"
   },
   "devDependencies": {
+    "glob": "^5.0.14",
     "benchmark": "^1.0.0",
     "dox": "^0.8.0",
     "doxme": "^1.8.2",
