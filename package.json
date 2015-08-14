@@ -1,7 +1,7 @@
 {
   "name": "turf-segmentize",
   "version": "1.0.0",
-  "description": "",
+  "description": "Divide a linestring into segments of specified length",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
