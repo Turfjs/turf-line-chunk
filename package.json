@@ -1,0 +1,23 @@
+{
+  "name": "turf-segmentize",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tim Channell",
+  "license": "ISC",
+  "dependencies": {
+    "turf-along": "^1.0.2",
+    "turf-featurecollection": "^1.0.1",
+    "turf-line-distance": "^1.0.2",
+    "turf-linestring": "^1.0.2"
+  },
+  "devDependencies": {
+    "benchmark": "^1.0.0",
+    "dox": "^0.8.0",
+    "doxme": "^1.8.2",
+    "tape": "^4.1.0"
+  }
+}
