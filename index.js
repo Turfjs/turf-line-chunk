@@ -3,9 +3,17 @@ var lineDistance = require('turf-line-distance');
 var linestring = require('turf-linestring');
 var fc = require('turf-featurecollection');
 
-
+/**
+ * Divides a {@link LineString} into chunks of a specified length.
+ * 
+ * @module turf/line-chunk
+ * @category transformation
+ * @param {Feature<LineString>} line the line to split
+ * @param {Number} segment_length how long to make each segment
+ * @param {String} units can be degrees, radians, miles, or kilometers
+ * @return {FeatureCollection<LineString>} collection of line segments
+ */
 module.exports = function(line, segment_length, units) {
-
   if (line.type == "LineString") {
     line = {"type": "Feature", "properties": {}, "geometry": line};
   }

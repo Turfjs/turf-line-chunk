@@ -1,10 +1,11 @@
 {
-  "name": "turf-segmentize",
+  "name": "turf-line-chunk",
   "version": "1.0.0",
-  "description": "Divide a linestring into segments of specified length",
+  "description": "Divide a linestring into chunks of a specified length",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tap test/test.js",    
+    "doc": "dox -r < index.js | doxme --readme > README.md"
   },
   "author": "Tim Channell",
   "license": "ISC",
@@ -15,10 +16,10 @@
     "turf-linestring": "^1.0.2"
   },
   "devDependencies": {
-    "glob": "^5.0.14",
     "benchmark": "^1.0.0",
     "dox": "^0.8.0",
     "doxme": "^1.8.2",
-    "tape": "^4.1.0"
+    "glob": "^5.0.14",
+    "tap": "^2.1.1"
   }
 }
