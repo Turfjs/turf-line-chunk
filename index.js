@@ -12,6 +12,42 @@ var fc = require('turf-featurecollection');
  * @param {Number} segment_length how long to make each segment
  * @param {String} units can be degrees, radians, miles, or kilometers
  * @return {FeatureCollection<LineString>} collection of line segments
+ * @example 
+ * var line = {
+ *   "type": "Feature",
+ *   "properties": {},
+ *   "geometry": {
+ *     "type": "LineString",
+ *     "coordinates": [
+ *       [
+ *         -86.28524780273438,
+ *         40.250184183819854
+ *       ],
+ *       [
+ *         -85.98587036132812,
+ *         40.17887331434696
+ *       ],
+ *       [
+ *         -85.97213745117188,
+ *         40.08857859823707
+ *       ],
+ *       [
+ *         -85.77987670898438,
+ *         40.15578608609647
+ *       ]
+ *     ]
+ *   }
+ * };
+ * 
+ * //= line 
+ *
+ * var segments = turf.lineChunk(line, 15, 'miles');
+ * 
+ * segments.features.forEach(function(ft, ind) {
+ *   ft.properties.stroke = (ind % 2 === 0) ? '#f40' : '#389979';
+ * });
+ *
+ * //= segments
  */
 module.exports = function(line, segment_length, units) {
   if (line.type == "LineString") {
