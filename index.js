@@ -39,15 +39,15 @@ var fc = require('turf-featurecollection');
  *   }
  * };
  * 
- * //= line 
+ * //=line 
  *
- * var segments = turf.lineChunk(line, 15, 'miles');
+ * var result = turf.lineChunk(line, 15, 'miles');
  * 
- * segments.features.forEach(function(ft, ind) {
+ * result.features.forEach(function(ft, ind) {
  *   ft.properties.stroke = (ind % 2 === 0) ? '#f40' : '#389979';
  * });
  *
- * //= segments
+ * //=result
  */
 module.exports = function(line, segment_length, units) {
   if (line.type == "LineString") {
