@@ -7,6 +7,20 @@
     "test": "tap test/test.js",    
     "doc": "dox -r < index.js | doxme --readme > README.md"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Turfjs/turf-line-chunk.git"
+  },
+   "bugs": {
+    "url": "https://github.com/Turfjs/turf-line-chunk/issues"
+  },
+  "keywords": [
+    "turf",
+    "gis",
+    "geojson",
+    "linestring",
+    "line segment"
+  ],
   "author": "Tim Channell",
   "license": "ISC",
   "dependencies": {
