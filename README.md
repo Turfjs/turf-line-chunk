@@ -1,3 +1,4 @@
+# DEPRECATED - replaced with [`@turf/line-chunk`](https://github.com/Turfjs/turf/tree/master/packages/turf-line-chunk)
 # turf-line-chunk
 
 Divide a linestring into chunks of a specified length
